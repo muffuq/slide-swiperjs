@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EtiVENTURES</title>
+  <link rel="icon" type="image/x-icon" href="./assets/img/icon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <script src="./js/cursor.js"></script>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+
+  <!-- Cursor -->
+
+  <main role="main" class="cursor">
+    <section class="cursor-container" id="cursor-1">
+    </section>
+  </main>
+
+  <!-- Load Bar Anim -->
+
+  <div class="load-bar">
+    <h1>Loading</h1>
+    <button class="button button--fenrir loadbutton" onclick="openweb()">
+      <svg aria-hidden="true" class="progress" width="70" height="70" viewbox="0 0 70 70">
+        <path class="progress__circle"
+          d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z" />
+        <path class="progress__path"
+          d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"
+          pathLength="1" />
+      </svg>
+      <span>Go</span>
+    </button>
+  </div>
+
+  <!-- Load Screen  -->
+
+  <!-- <div class="loading">
+        <h1 class="load-text">Loading:</h1>
+        <h1 class="load-text">100%</h1>
+     </div> -->
+
+  <!-- Slider -->
+  <div class="header">
+    <div class="logo">
+      <img id="logo" src="./assets/img/logo.svg" alt="logo">
+    </div>
+    <div></div>
+    <div class="menuu">
+      <img id="menuuu" src="./assets/img/menu-icon.svg" alt="menu">
+    </div>
+  </div>
+
+  <div class="video-cont">
+    <div class="back-video-wrapper">
+      <video id="slaytBackVideo" src="./assets/video/industrial.mp4" autoplay muted loop playsinline></video>
+    </div>
+  </div>
+
+  <audio id="slaytmusic" src="./assets/music/sound05.mp3" loop volume>
+    Not Support Html5 Browser
+  </audio>
+
+  <div class="swiper mySwiper">
+    <div class="cursor-slider">
+      <h1>Drag</h1>
+    </div>
+
+    <img class="cursor-drag" src="./assets/img/ok.svg" alt="ok">
+
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" data-video="./assets/video/industrial.mp4" data-music="./assets/music/sound05.mp3"
+        data-list="0">
+        <div class="slide-text">
+          <h1 style="text-align: left;" class="slide-h1">
+            Industrial <br>
+            Investments
+          </h1>
+          <button class="button button--fenrir">
+            <svg aria-hidden="true" class="progress" width="70" height="70" viewbox="0 0 70 70">
+              <path class="progress__circle"
+                d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z" />
+              <path class="progress__path"
+                d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"
+                pathLength="1" />
+            </svg>
+            <span>Go</span>
+          </button>
+        </div>
+      </div>
+      <div class="swiper-slide" data-video="/assets/video/real-estate.mp4" data-music="./assets/music/sound02.mp3"
+        data-list="1">
+        <div class="slide-text">
+          <h1 style="text-align: left;" class="slide-h1">
+            Real Estate <br>
+            Developments</h1>
+          <button class="button button--fenrir">
+            <svg aria-hidden="true" class="progress" width="70" height="70" viewbox="0 0 70 70">
+              <path class="progress__circle"
+                d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z" />
+              <path class="progress__path"
+                d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"
+                pathLength="1" />
+            </svg>
+            <span>Go</span>
+          </button>
+        </div>
+      </div>
+      <div class="swiper-slide" data-video="/assets/video/mining.mp4" data-music="./assets/music/sound04.mp3"
+        data-list="2">
+        <div class="slide-text">
+          <h1 style="text-align: left;" class="slide-h1">Mining</h1>
+          <button class="button button--fenrir">
+            <svg aria-hidden="true" class="progress" width="70" height="70" viewbox="0 0 70 70">
+              <path class="progress__circle"
+                d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z" />
+              <path class="progress__path"
+                d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"
+                pathLength="1" />
+            </svg>
+            <span>Go</span>
+          </button>
+        </div>
+      </div>
+      <div class="swiper-slide" data-video="/assets/video/agriculture.mp4" data-music="./assets/music/sound03.mp3"
+        data-list="3">
+        <div class="slide-text">
+          <h1 style="text-align: left;" class="slide-h1">Agriculture</h1>
+          <button class="button button--fenrir">
+            <svg aria-hidden="true" class="progress" width="70" height="70" viewbox="0 0 70 70">
+              <path class="progress__circle"
+                d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z" />
+              <path class="progress__path"
+                d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"
+                pathLength="1" />
+            </svg>
+            <span>Go</span>
+          </button>
+        </div>
+      </div>
+      <div class="swiper-slide" data-video="/assets/video/target-areas.mp4" data-music="./assets/music/sound01.mp3"
+        data-list="4">
+        <div class="slide-text">
+          <h1 style="text-align: left;" class="slide-h1">Target Areas</h1>
+          <button class="button button--fenrir">
+            <svg aria-hidden="true" class="progress" width="70" height="70" viewbox="0 0 70 70">
+              <path class="progress__circle"
+                d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z" />
+              <path class="progress__path"
+                d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"
+                pathLength="1" />
+            </svg>
+            <span>Go</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="swiper-pagination"></div> -->
+  <!-- <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div> -->
+
+  <!-- MENÜ -->
+
+  <div class="menu-cont">
+
+    <div class="menu-item" data-listnumber="2" >
+      <h1>Industrial <br>
+        Investments
+      </h1>
+      <video src="./assets/video/industrial.mp4" muted playsinline loop autoplay></video>
+    </div>
+
+
+    <div class="menu-item" data-listnumber="3">
+      <h1>Real Estate <br>
+        Developments</h1>
+      <video src="./assets/video/real-estate.mp4" muted playsinline loop autoplay></video>
+    </div>
+
+
+    <div class="menu-item" data-listnumber="4">
+      <h1>Mining</h1>
+      <video src="./assets/video/mining.mp4" muted playsinline loop autoplay></video>
+    </div>
+
+
+    <div class="menu-item" data-listnumber="0">
+      <h1>Agriculture</h1>
+      <video src="./assets/video/agriculture.mp4" muted playsinline loop autoplay></video>
+    </div>
+
+
+    <div class="menu-item" data-listnumber="1">
+      <h1>Target Areas</h1>
+      <video src="./assets/video/target-areas.mp4" muted playsinline loop autoplay></video>
+    </div>
+
+  </div>
+
+  <div class="footer">
+        <div class="cop">
+            <h2>Copyright © 2022 Eti Ventures</h2>
+        </div>
+        <div class="music-wave">
+          <div class="wrapper">
+            <div class="sound-wave">
+                <div class="sound-bar"></div>
+                <div class="sound-bar"></div>
+                <div class="sound-bar"></div>
+                <div class="sound-bar"></div>
+                <div class="sound-bar"></div>
+                <div class="sound-bar"></div>
+                <div class="sound-bar"></div>
+                <div class="sound-bar"></div>
+                <div class="sound-bar"></div>
+                <div class="sound-bar"></div>
+            </div>
+             </div>
+        </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+    integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+    integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+    integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.min.js"
+    integrity="sha512-dPYTaB+Ip4gAl9vo6U0jSmI8v1AZKjPKH367mfo7pR5gLf1IKpjm3bIXIwm+MmYWEf0eiBEWSBqE+MdKUx0jfg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
